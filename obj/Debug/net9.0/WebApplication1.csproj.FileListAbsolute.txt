@@ -1,5 +1,7 @@
 /home/juan/RiderProjects/WebApplication1/WebApplication1/bin/Debug/net9.0/appsettings.Development.json
 /home/juan/RiderProjects/WebApplication1/WebApplication1/bin/Debug/net9.0/appsettings.json
+/home/juan/RiderProjects/WebApplication1/WebApplication1/bin/Debug/net9.0/Views/Student/package-lock.json
+/home/juan/RiderProjects/WebApplication1/WebApplication1/bin/Debug/net9.0/Views/Student/package.json
 /home/juan/RiderProjects/WebApplication1/WebApplication1/bin/Debug/net9.0/WebApplication1.staticwebassets.runtime.json
 /home/juan/RiderProjects/WebApplication1/WebApplication1/bin/Debug/net9.0/WebApplication1.staticwebassets.endpoints.json
 /home/juan/RiderProjects/WebApplication1/WebApplication1/bin/Debug/net9.0/WebApplication1
@@ -113,6 +115,7 @@
 /home/juan/RiderProjects/WebApplication1/WebApplication1/obj/Debug/net9.0/WebApplication1.MvcApplicationPartsAssemblyInfo.cache
 /home/juan/RiderProjects/WebApplication1/WebApplication1/obj/Debug/net9.0/WebApplication1.RazorAssemblyInfo.cache
 /home/juan/RiderProjects/WebApplication1/WebApplication1/obj/Debug/net9.0/WebApplication1.RazorAssemblyInfo.cs
+/home/juan/RiderProjects/WebApplication1/WebApplication1/obj/Debug/net9.0/WebApplication1.sourcelink.json
 /home/juan/RiderProjects/WebApplication1/WebApplication1/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /home/juan/RiderProjects/WebApplication1/WebApplication1/obj/Debug/net9.0/scopedcss/bundle/WebApplication1.styles.css
 /home/juan/RiderProjects/WebApplication1/WebApplication1/obj/Debug/net9.0/scopedcss/projectbundle/WebApplication1.bundle.scp.css

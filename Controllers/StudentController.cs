@@ -3,14 +3,36 @@ using Microsoft.AspNetCore.Mvc;
 
 public class StudentController : Controller
 {
+
+    private readonly AppDbContext _context;
+
+    public StudentController(AppDbContext context)
+    {
+        _context = context;
+    }
+
     public IActionResult Index()
     {
-        var students = new List<Models.Student>
-        {
-            new Models.Student { Name = "Alice", Age = 20, Address = "123 Main St", Class = "Math", GPA = 3.5f },
-            new Models.Student { Name = "Bob", Age = 22, Address = "456 Oak St", Class = "Science", GPA = 3.7f },
-            new Models.Student { Name = "Charlie", Age = 21, Address = "789 Pine St", Class = "History", GPA = 3.9f }
-        };
+        var students = _context.Student.ToList(); // Fetch from DB
         return View(students);
+    }
+    // Show the create form
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+    }
+    // Handle form submission
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult Create(WebApplication1.Models.Student student)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Student.Add(student);
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
+        return View(student);
     }
 }

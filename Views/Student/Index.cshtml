@@ -1,8 +1,23 @@
-@model List<WebApplication1.Models.Student>
+@model IEnumerable<WebApplication1.Models.Student>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Add New Student</a>
+</p>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>GPA</th>
+    <th>Address</th>
+    <th>Class</th>
+  </tr>
+		@foreach (var student in Model){
+  <tr>
+		<td>@student.Name</td>
+		<td>@student.Age</td>
+		<td>@student.GPA</td>
+		<td>@student.Address</td>
+		<td>@student.Class</td>
+  </tr>
+		}
+</table>
 
-<ul>
-    @foreach(var student in Model)
-    {
-        <li>@student.Name - @student.Age years old</li>
-    }
-</ul>

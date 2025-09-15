@@ -1,0 +1,8 @@
+@model List<WebApplication1.Models.Student>
+
+<ul>
+    @foreach(var student in Model)
+    {
+        <li>@student.Name - @student.Age years old</li>
+    }
+</ul>
